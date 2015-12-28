@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CarRental;
+using CarRental.Model;
+using CarRental.Service.Interface;
 
 
 namespace CarRental.Service.Static

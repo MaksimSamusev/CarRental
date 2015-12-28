@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CarRental.Service.Interface;
 using CarRental.Model;
+using System.Linq;
+
 
 
 
@@ -71,11 +73,11 @@ namespace CarRental.Service.Static.Test
         public void UpdateTest()
         {
             var user = service.Get().First();
-            user.Name = user.Name + "1";
+            user.Login = user.Login + "1";
             service.Update(user);
             var updatedUser = service.Get(user.Id);
             Assert.IsNotNull(updatedUser);
-            Assert.AreEqual(updatedUser.Login, user.Name);
+            Assert.AreEqual(updatedUser.Login, user.Login);
         }
 
         [TestMethod]

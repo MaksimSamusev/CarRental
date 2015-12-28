@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CarRental.Model;
+using CarRental.Service.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,7 +50,7 @@ namespace CarRental.Service.Static
             {
                 throw new NullReferenceException();
             }
-            existUser.Name = item.Name;
+            existUser.Login = item.Login;
             return (User)existUser.Clone();
         }
     }

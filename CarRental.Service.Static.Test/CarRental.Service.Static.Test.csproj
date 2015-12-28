@@ -55,6 +55,10 @@
     <Compile Include="UserServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CarRental.Service.Static\CarRental.Service.Static.csproj">
+      <Project>{58E4369D-70E0-4E93-95BA-252ED355A609}</Project>
+      <Name>CarRental.Service.Static</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CarRental\CarRental.csproj">
       <Project>{2EB50823-0E30-4B5B-B92A-C38108B9AD8D}</Project>
       <Name>CarRental</Name>
