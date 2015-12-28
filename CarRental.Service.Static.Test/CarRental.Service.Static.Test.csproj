@@ -52,6 +52,10 @@
   <ItemGroup>
     <Compile Include="RoleServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CarServiceTests.cs" />
+    <Compile Include="OrderServiceTests.cs" />
+    <Compile Include="RenterServiceTests.cs" />
+    <Compile Include="RoomRentalServiceTests.cs" />
     <Compile Include="UserServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
