@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CarRental.CommonInterface;
+using CarRental.Model.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +10,28 @@ namespace CarRental.Service.Static.Common
 {
     public abstract class DomainService<T> : IDomainService<T> where T : BaseClass
     {
+        
+        public event EventHandler<int> AddInfo;
+        public event EventHandler<int> DeleteInfo;
+        public DomainService()
+        {
+            AddInfo += logger.logger.OnAddInfo;
+            DeleteInfo += logger.logger.OnDeleteInfo;
+       }
         public virtual T Add(T entity)
         {
+            
             var newEntity = (T)entity.Clone();
             newEntity.Id = !GetEntities().Any() ? 1 : GetEntities().Max(item => item.Id) + 1;
-
+            AddInfo(this,newEntity.Id);
             newEntity.SetNullReferences();
 
             GetEntities().Add(newEntity);
+            
 
             return (T)newEntity.Clone();
+
+            
         }
 
         public virtual T Get(int id)
@@ -71,7 +85,7 @@ namespace CarRental.Service.Static.Common
             {
                 throw new NullReferenceException();
             }
-
+            DeleteInfo(this, id);
             GetEntities().Remove(existsEntity);
         }
 

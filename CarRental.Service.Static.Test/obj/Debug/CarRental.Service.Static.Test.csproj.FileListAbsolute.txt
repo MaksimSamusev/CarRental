@@ -1,2 +1,10 @@
 D:\Проекты на сишарп\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.csprojResolveAssemblyReference.cache
 D:\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.csprojResolveAssemblyReference.cache
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.Service.Static.Test.dll
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.Service.Static.Test.pdb
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.dll
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.Service.Static.dll
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.Service.Static.pdb
+D:\CarRental\CarRental.Service.Static.Test\bin\Debug\CarRental.pdb
+D:\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.dll
+D:\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.pdb
