@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CarRental.Service.Static
 {
-    class CarService : ICarService
+    public class CarService : ICarService
     {
         private readonly List<Car> _cars = new List<Car>();
         public Car Add(Car item)

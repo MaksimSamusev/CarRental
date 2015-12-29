@@ -10,11 +10,8 @@ namespace CarRental.Model
     public class Renter : BaseClass
     {
         public string FirstName { get; set; }
-
         public string LastName { get; set; }
-
         public int PassportId { get; set; }
-
         public string Address { get; set; }
         public override object Clone()
         {

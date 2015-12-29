@@ -1,1 +1,2 @@
 D:\Проекты на сишарп\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.csprojResolveAssemblyReference.cache
+D:\CarRental\CarRental.Service.Static.Test\obj\Debug\CarRental.Service.Static.Test.csprojResolveAssemblyReference.cache

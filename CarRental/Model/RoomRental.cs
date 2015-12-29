@@ -10,11 +10,8 @@ namespace CarRental.Model
     public class RoomRental : BaseClass
     {
         public string Address { get; set; }
-
         public int Phone { get; set; }
-
         public List<Car> Cars { get; set; }
-
         public override object Clone()
         {
             return new RoomRental
